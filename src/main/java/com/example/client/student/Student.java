@@ -12,24 +12,24 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_sequence")
     private Long id;
     private String name;
-    private String emai;
+    private String email;
     private LocalDate dob;
     private Integer age;
 
     public Student() {
     }
 
-    public Student(Long id, String name, String emai, LocalDate dob, Integer age) {
+    public Student(Long id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
-        this.emai = emai;
+        this.email = email;
         this.dob = dob;
         this.age = age;
     }
 
-    public Student(String name, String emai, LocalDate dob, Integer age) {
+    public Student(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
-        this.emai = emai;
+        this.email = email;
         this.dob = dob;
         this.age = age;
     }
@@ -50,12 +50,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getEmai() {
-        return emai;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmai(String emai) {
-        this.emai = emai;
+    public void setEmail(String emai) {
+        this.email = emai;
     }
 
     public LocalDate getDob() {
@@ -79,7 +79,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", emai='" + emai + '\'' +
+                ", email='" + email + '\'' +
                 ", dob=" + dob +
                 ", age=" + age +
                 '}';
